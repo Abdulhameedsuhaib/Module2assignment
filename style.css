@@ -1,0 +1,54 @@
+.container{
+
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+     
+    background-color: rgb(156, 147, 147);     
+  
+}
+.sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background-color: rgb(204, 85, 85);
+    width: 40%;
+     height: 40px;
+     border: 1px black solid; 
+}
+
+.box{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.title{
+    text-align: center;
+    
+}
+
+
+@media  screen and (max-width:425px) {
+  .box {
+    flex-wrap: wrap;
+
+  }  
+}
+@media  screen  and (min-width: 425px )and (max-width:758px)   {
+  
+    .container{
+     
+        flex: 0 0 calc(50% - 10px);
+
+    }  
+
+    .box{
+    flex-wrap: wrap;
+}
+    .sub3 {
+        flex-basis: 100%;
+    }  
+  }
